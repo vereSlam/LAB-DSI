@@ -73,6 +73,8 @@ public class ControlNotas extends javax.swing.JFrame {
             }
         });
 
+        tfCUM.setEditable(false);
+
         lbMateria.setText("Materia");
 
         lbUV.setText("UV");
@@ -378,7 +380,7 @@ public class ControlNotas extends javax.swing.JFrame {
             
             JOptionPane.showMessageDialog(this, "Llene todos los campos solicitados.", "Error", JOptionPane.ERROR_MESSAGE);
         }
-        
+       
         // Convertir string a int y a float con un parseo
         nota1 = Float.parseFloat(num1); 
         nota2 = Float.parseFloat(num2); 
@@ -390,6 +392,7 @@ public class ControlNotas extends javax.swing.JFrame {
         uv3 = Integer.parseInt(UVmateria3);
         uv4 = Integer.parseInt(UVmateria4);
         uv5 = Integer.parseInt(UVmateria5);
+        
         
         //Validar que las notas sean mayores a 0 y menores a 10
         if(!(nota1 <= 10) || !(nota1 >= 0) || !(nota2 <= 10) || !(nota2 >= 0) || !(nota3 <= 10) || !(nota3 >= 0) || !(nota4 <= 10) || !(nota4 >= 0)
@@ -458,7 +461,7 @@ public class ControlNotas extends javax.swing.JFrame {
         //Cálculo del CUM
         cum = ((nota1*uv1)+(nota2*uv2)+(nota3*uv3)+(nota4*uv4)+(nota5*uv5))/(uv1+uv2+uv3+uv4+uv5);
         
-        // Convertir float e int a string
+        // Convertir double e int a string
         String TotalCum = Float.toString(cum);
         String MateriasAprobadas = Integer.toString(aprobado);
         String MateriasReprobadas = Integer.toString(reprobado);
