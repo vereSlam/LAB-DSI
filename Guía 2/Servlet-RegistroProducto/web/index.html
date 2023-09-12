@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>REGISTRO PRODUCTO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+   <body>
+       <h1>Registro de un Producto</h1>
+        <form action="ServletPrincipal" method="post">
+           Nombre del producto: <input type="text" name="nombreProducto" size=15><br><br>
+           Precio: <input type="number" name="precio" step="0.01" min="1" placeholder="precio minimo 1"><br><br>
+           Cantidad: <input type="number" name="cantidad" min="1" placeholder="cantidad minima 1"><br><br>
+           Fecha de entrada: <input type="date" name="fecha" min="2022-01-01" max="2023-12-31" >
+           <p>
+               Descripción: <br>
+               <textarea name="descripcion" rows=4 cols=40></textarea>
+           <p>
+           <p>
+               Categoria: <br>
+                <input type="radio" checked name="categoria" value="electronica">Electrónica<br>
+                <input type="radio" checked name="categoria" value="ropa">Ropa<br>
+                <input type="radio" name="categoria" value="hogar">Hogar<br>
+                <input type="radio" name="categoria" value="alimentos">Alimentos<br>
+                <input type="radio" name="categoria" value="juguetes">Juguetes
+           <p>
+               <input type="submit" name="botonenviar" value="ENVIAR">
+               <input type="reset" name="botonlimpiar" value="LIMPIAR">
+        </form>
+    </body>
+</html>
