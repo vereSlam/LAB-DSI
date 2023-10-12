@@ -11,7 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Iniciar Sesión</title>
     </head>
-   <body>
+   <body> 
            <form method="POST" action="/SuperMercado/ServletPrincipal?accion=Login" id="formLogin">
             <div id="resultLogin"></div>    
             <div><h1>Bienvenido al Sistema del SuperMercado</h1></div>
