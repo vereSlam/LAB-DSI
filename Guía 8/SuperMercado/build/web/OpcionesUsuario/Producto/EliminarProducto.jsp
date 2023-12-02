@@ -12,23 +12,23 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Eliminar Producto</title>
     </head>
-    <body>
+    <body class="agg">
          <h1>Eliminar producto</h1>
 
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=EliminarProducto">
             <div>
                 <label>ID Producto: ${param.idProducto}</label><br>
-                <label>ID SubCategoria: ${param.idSubCategoria}</label><br>
-                <label>ID Proveedor: ${param.idProveedor}</label><br>
+                <label>SubCategoria: ${param.subCategoria}</label><br>
+                <label>Nombre Proveedor: ${param.nombreProveedor}</label><br>
                 <label>Nombre de Producto: ${param.nombreProducto}</label><br>
                 <label>Descripcion: ${param.descripcion}</label><br>
                 <label>Precio Unitario: ${param.precioUnitario}</label><br>
-                <label>ID Precio de unidad: ${param.idUnidadPrecio}</label><br>   
+                <label>Precio de unidad: ${param.unidadPrecio}</label><br>   
                 <input type="hidden" name="idProducto" id="idProducto" value="${param.idProducto}" /><br><br>
-                <input type="submit" value="Eliminar" onclick="return confirm('¿Desea eliminar el producto?')" /><br><br>
+                <input type="submit" class="botn" value="Eliminar" onclick="return confirm('¿Desea eliminar el producto?')" /><br><br>
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarProductos">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarProductos">Regresar</a><br><br>
             </div>             
         </form>
     </body>

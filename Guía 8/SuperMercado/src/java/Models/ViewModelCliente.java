@@ -16,11 +16,12 @@ public class ViewModelCliente {
     private String email;
     private String DUI;
     private int idDireccion;
+    private String direccionCompleta;
 
     public ViewModelCliente() {
     }
 
-    public ViewModelCliente(int idCliente, String nombresCliente, String apellidosCliente, String telefono, String email, String DUI, int idDireccion) {
+    public ViewModelCliente(int idCliente, String nombresCliente, String apellidosCliente, String telefono, String email, String DUI, int idDireccion, String direccionCompleta) {
         this.idCliente = idCliente;
         this.nombresCliente = nombresCliente;
         this.apellidosCliente = apellidosCliente;
@@ -28,6 +29,7 @@ public class ViewModelCliente {
         this.email = email;
         this.DUI = DUI;
         this.idDireccion = idDireccion;
+        this.direccionCompleta = direccionCompleta;
     }
 
     public int getIdCliente() {
@@ -85,6 +87,13 @@ public class ViewModelCliente {
     public void setIdDireccion(int idDireccion) {
         this.idDireccion = idDireccion;
     }
-    
+
+    public String getDireccionCompleta() {
+        return direccionCompleta;
+    }
+
+    public void setDireccionCompleta(String direccionCompleta) {
+        this.direccionCompleta = direccionCompleta;
+    }
     
 }

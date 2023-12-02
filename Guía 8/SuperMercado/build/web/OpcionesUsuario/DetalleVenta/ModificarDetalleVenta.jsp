@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Modificar DetalleVenta</title>
     </head>
-    <body>
+    <body class="agg">
          <h1>Modificar detalle de venta</h1>
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=ModificarDetalleVenta">
             <div>
@@ -30,10 +30,10 @@
                 <input type="text" name="montoTotal" id="montoTotal" value="${param.montoTotal}" required /><br>
                 <label>idMetodopago:</label>                          
                 <input type="text" name="idMetodoPago" id="idMetodoPago" value="${param.idMetodoPago}" required /><br><br>           
-                <input type="submit" value="Modificar" onclick="return confirm('¿Desea modificar el detalle de venta?')" /><br><br> 
+                <input type="submit" class="botn" value="Modificar" onclick="return confirm('¿Desea modificar el detalle de venta?')" /><br><br> 
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarDetallesVenta">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarDetallesVenta">Regresar</a><br><br>
             </div>             
         </form>
     </body>

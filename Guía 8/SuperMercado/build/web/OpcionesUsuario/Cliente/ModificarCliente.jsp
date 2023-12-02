@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Modificar Cliente</title>
     </head>
-    <body>
+    <body class="agg">
         <h1>Modificar cliente</h1>
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=ModificarCliente">
             <div>
@@ -30,10 +30,10 @@
                 <input type="text" name="DUI" id="DUI" value="${param.DUI}" required /><br>
                 <label>idDirección:</label>
                 <input type="text" name="idDireccion" id="idDireccion" value="${param.idDireccion}" required /><br><br>            
-                <input type="submit" value="Modificar" onclick="return confirm('¿Desea modificar el cliente?')" /><br><br> 
+                <input type="submit" class="botn" value="Modificar" onclick="return confirm('¿Desea modificar el cliente?')" /><br><br> 
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarClientes">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarClientes">Regresar</a><br><br>
             </div>             
         </form>
     </body>

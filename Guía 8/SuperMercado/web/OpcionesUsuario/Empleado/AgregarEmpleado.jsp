@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Agregar Empleado</title>
     </head>
-    <body>
+    <body class="agg">
        <c:if test="${exito!=null}">
             <c:if test="${exito}">
                 <p><strong style="color: darkgreen;">La información se guardó correctamente</strong></p>
@@ -49,10 +49,10 @@
                 <input type="text" name="idCargo" id="idCargo" required /><br>
                 <label>idDirección:</label>
                 <input type="text" name="idDireccion" id="idDireccion" required /><br><br>                            
-                <input type="submit" value="Registrar" onclick="return confirm('¿Desea registrar el empleado?')" /><br><br>
+                <input type="submit" class="botn" value="Registrar" onclick="return confirm('¿Desea registrar el empleado?')" /><br><br>
             </div><br>
             <div>
-                <a href="/SuperMercado/?accion=GestionarEmpleados">Regresar</a>
+                <a class="botn" href="/SuperMercado/?accion=GestionarEmpleados">Regresar</a>
             </div>            
         </form>
     </body>

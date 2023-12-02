@@ -12,19 +12,19 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Eliminar AsignacionDescuento</title>
     </head>
-    <body>
+    <body class="agg">
          <h1>Eliminar Asignacion de Descuento</h1>
 
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=EliminarAsignacionDescuentoProducto">
             <div>
                 <label>ID Asignacion Descuento: ${param.idAsignacionDescuentoProducto}</label><br>
-                <label>ID Producto: ${param.idProducto}</label><br>
-                <label>ID Descuento: ${param.idDescuento}</label><br>  
+                <label>Nombre producto: ${param.nombreProducto}</label><br>
+                <label>Nombre descuento: ${param.nombreDescuento}</label><br>  
                 <input type="hidden" name="idAsignacionDescuentoProducto" id="idAsignacionDescuentoProducto" value="${param.idAsignacionDescuentoProducto}" /><br><br>
-                <input type="submit" value="Eliminar" onclick="return confirm('¿Desea eliminar la asignacion de descuento?')" /><br><br>
+                <input type="submit" class="botn" value="Eliminar" onclick="return confirm('¿Desea eliminar la asignacion de descuento?')" /><br><br>
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarAsignacionDescuentoProducto">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarAsignacionDescuentoProducto">Regresar</a><br><br>
             </div>             
         </form>
     </body>

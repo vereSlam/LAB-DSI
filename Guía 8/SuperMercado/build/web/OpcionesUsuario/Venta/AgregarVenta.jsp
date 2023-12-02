@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Agregar Venta</title>
     </head>
-    <body>
+    <body class="agg">
        <c:if test="${exito!=null}">
             <c:if test="${exito}">
                 <p><strong style="color: darkgreen;">La información se guardó correctamente</strong></p>
@@ -34,10 +34,10 @@
                 <input type="date" name="fechaVenta" id="fechaVenta" required /><br>
                 <label>Hora de venta:</label>
                 <input type="text" name="horaVenta" id="horaVenta" required /><br>                            
-                <input type="submit" value="Registrar" onclick="return confirm('¿Desea registrar la venta?')" /><br><br>
+                <input type="submit" class="botn" value="Registrar" onclick="return confirm('¿Desea registrar la venta?')" /><br><br>
             </div><br>
             <div>
-                <a href="/SuperMercado/?accion=GestionarVentas">Regresar</a>
+                <a class="botn" href="/SuperMercado/?accion=GestionarVentas">Regresar</a>
             </div>            
         </form>
     </body>

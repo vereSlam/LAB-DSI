@@ -25,7 +25,7 @@
         <table border="1" class="tabla">
             <thead>
                 <tr>
-                    <th>idCategoria</th>
+                    <th>IdCategoria</th>
                     <th>Categoria</th>
                     <th>Acciones</th>
                 </tr>

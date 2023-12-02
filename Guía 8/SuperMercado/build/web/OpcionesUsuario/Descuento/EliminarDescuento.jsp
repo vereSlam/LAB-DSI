@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Eliminar Descuento</title>
     </head>
-    <body>
+    <body class="agg">
          <h1>Eliminar descuento</h1>
 
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=EliminarDescuento">
@@ -23,10 +23,10 @@
                 <label>Fecha de fin: ${param.fechaFin}</label><br>
                 <label>Porcentaje de descuento: ${param.porcentajeDescuento}</label><br>  
                 <input type="hidden" name="idDescuento" id="idDescuento" value="${param.idDescuento}" /><br><br>
-                <input type="submit" value="Eliminar" onclick="return confirm('¿Desea eliminar el descuento?')" /><br><br>
+                <input type="submit" class="botn" value="Eliminar" onclick="return confirm('¿Desea eliminar el descuento?')" /><br><br>
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarDescuentos">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarDescuentos">Regresar</a><br><br>
             </div>             
         </form>
     </body>

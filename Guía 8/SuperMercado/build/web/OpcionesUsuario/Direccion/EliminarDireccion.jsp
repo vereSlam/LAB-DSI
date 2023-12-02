@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Eliminar Direccion</title>
     </head>
-    <body>
+    <body class="agg">
          <h1>Eliminar direccion</h1>
 
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=EliminarDireccion">
@@ -20,13 +20,16 @@
                 <label>ID Direccion: ${param.idDireccion}</label><br>
                 <label>Linea 1: ${param.linea1}</label><br>
                 <label>Linea 2: ${param.linea2}</label><br>
-                <label>Codigo postal: ${param.codigoPostal}</label><br>
-                <label>ID Distrito: ${param.idDistrito}</label><br>   
+                <label>Distrito: ${param.distrito}</label><br>
+                <label>Municipio: ${param.municipio}</label><br>
+                <label>Departamento: ${param.departamento}</label><br>
+                <label>Pais: ${param.pais}</label><br>
+                <label>Codigo postal: ${param.codigoPostal}</label><br> 
                 <input type="hidden" name="idDireccion" id="idDireccion" value="${param.idDireccion}" /><br><br>
-                <input type="submit" value="Eliminar" onclick="return confirm('¿Desea eliminar la direccion?')" /><br><br>
+                <input type="submit" class="botn" value="Eliminar" onclick="return confirm('¿Desea eliminar la direccion?')" /><br><br>
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarDirecciones">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarDirecciones">Regresar</a><br><br>
             </div>             
         </form>
     </body>

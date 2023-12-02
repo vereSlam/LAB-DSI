@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Eliminar Categoria</title>
     </head>
-    <body>
+    <body class="agg">
         <h1>Eliminar Categoria</h1>
 
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=EliminarCategoria">
@@ -20,10 +20,10 @@
                 <label>ID Categoria: ${param.idCategoria}</label><br>
                 <label>categoria: ${param.categoria}</label><br>   
                 <input type="hidden" name="idCategoria" id="idCategoria" value="${param.idCategoria}" /><br><br>
-                <input type="submit" value="Eliminar" onclick="return confirm('¿Desea eliminar la categoria?')" /><br><br>
+                <input type="submit" class="botn" value="Eliminar" onclick="return confirm('¿Desea eliminar la categoria?')" /><br><br>
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarCategorias">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarCategorias">Regresar</a><br><br>
             </div>             
         </form>
     </body>

@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Agregar Cargo</title>
     </head>
-    <body>
+    <body class="agg">
         <c:if test="${exito!=null}">
             <c:if test="${exito}">
                 <p><strong style="color: darkgreen;">La información se guardó correctamente</strong></p>
@@ -28,10 +28,10 @@
                 <!-- El ID es autoincrementable -->
                 <label>Cargo:</label>
                 <input type="text" name="cargo" id="cargo" required /><br>               
-                <input type="submit" value="Registrar" onclick="return confirm('¿Desea registrar el cargo?')" /><br><br>
+                <input type="submit" class="botn" value="Registrar" onclick="return confirm('¿Desea registrar el cargo?')" /><br><br>
             </div><br>
             <div>
-                <a href="/SuperMercado/?accion=GestionarCargos">Regresar</a>
+                <a class="botn" href="/SuperMercado/?accion=GestionarCargos">Regresar</a>
             </div>            
         </form>
     </body>

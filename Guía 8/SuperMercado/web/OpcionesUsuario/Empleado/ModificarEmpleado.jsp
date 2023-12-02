@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Modificar Empleado</title>
     </head>
-    <body>
+    <body class="agg">
         <h1>Modificar empleado</h1>
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=ModificarEmpleado">
             <div>
@@ -40,10 +40,10 @@
                 <input type="text" name="idCargo" id="idCargo" value="${param.idCargo}" required /><br>
                 <label>idDirección:</label>
                 <input type="text" name="idDireccion" id="idDireccion" value="${param.idDireccion}" required /><br><br>           
-                <input type="submit" value="Modificar" onclick="return confirm('¿Desea modificar el empleado?')" /><br><br> 
+                <input type="submit" class="botn" value="Modificar" onclick="return confirm('¿Desea modificar el empleado?')" /><br><br> 
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarEmpleados">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarEmpleados">Regresar</a><br><br>
             </div>             
         </form>
     </body>

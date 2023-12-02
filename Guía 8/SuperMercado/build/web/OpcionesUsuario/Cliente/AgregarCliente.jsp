@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Agregar Cliente</title>
     </head>
-    <body>
+    <body class="agg">
         <c:if test="${exito!=null}">
             <c:if test="${exito}">
                 <p><strong style="color: darkgreen;">La información se guardó correctamente</strong></p>
@@ -38,10 +38,10 @@
                 <input type="text" name="DUI" id="DUI" required /><br>
                 <label>ID Dirección:</label>
                 <input type="text" name="idDireccion" id="idDireccion" required /><br>                           
-                <input type="submit" value="Registrar" onclick="return confirm('¿Desea registrar el cliente?')" /><br><br>
+                <input type="submit" class="botn" value="Registrar" onclick="return confirm('¿Desea registrar el cliente?')" /><br><br>
             </div><br>
             <div>
-                <a href="/SuperMercado/?accion=GestionarClientes">Regresar</a>
+                <a class="botn" href="/SuperMercado/?accion=GestionarClientes">Regresar</a>
             </div>            
         </form>
     </body>

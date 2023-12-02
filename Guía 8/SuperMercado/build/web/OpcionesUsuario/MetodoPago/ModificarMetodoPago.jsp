@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Modificar MetodoPago</title>
     </head>
-    <body>
+    <body class="agg">
         <h1>Modificar metodo de pago</h1>
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=ModificarMetodoPago">
             <div>
@@ -20,10 +20,10 @@
                 <input type="text" name="idMetodoPago" id="idMetodoPago" value="${param.idMetodoPago}" readonly /><br>
                 <label>Nombre del metodo de pago:</label>
                 <input type="text" name="nombreMetodoPago" id="nombreMetodoPago" value="${param.nombreMetodoPago}" required /><br><br>           
-                <input type="submit" value="Modificar" onclick="return confirm('¿Desea modificar el metodo de pago?')" /><br><br> 
+                <input type="submit" class="botn" value="Modificar" onclick="return confirm('¿Desea modificar el metodo de pago?')" /><br><br> 
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarMetodoPago">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarMetodoPago">Regresar</a><br><br>
             </div>             
         </form>
     </body>

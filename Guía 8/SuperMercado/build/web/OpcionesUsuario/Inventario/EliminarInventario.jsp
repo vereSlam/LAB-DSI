@@ -12,20 +12,20 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Eliminar Inventario</title>
     </head>
-    <body>
+    <body class="agg">
          <h1>Eliminar inventario</h1>
 
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=EliminarInventario">
             <div>
                 <label>ID Inventario: ${param.idInventario}</label><br>
-                <label>ID CantidadStock: ${param.idCantidadStock}</label><br>
                 <label>Cantidad Existente: ${param.cantExist}</label><br>
+                <label>Fecha entrada: ${param.fechaEntrada}</label><br> 
                 <label>Fecha actualizacion: ${param.fechaActualizacion}</label><br>   
                 <input type="hidden" name="idInventario" id="idInventario" value="${param.idInventario}" /><br><br>
-                <input type="submit" value="Eliminar" onclick="return confirm('¿Desea eliminar el inventario?')" /><br><br>
+                <input type="submit" class="botn" value="Eliminar" onclick="return confirm('¿Desea eliminar el inventario?')" /><br><br>
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarInventarios">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarInventarios">Regresar</a><br><br>
             </div>             
         </form>
     </body>

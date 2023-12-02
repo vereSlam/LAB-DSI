@@ -23,12 +23,15 @@ public class ViewModelEmpleado {
     private Date fechaContratacion;
     private float salario;
     private int idCargo;
+    private String cargo;
     private int idDireccion;
+    private String direccionCompleta;
 
     public ViewModelEmpleado() {
     }
 
-    public ViewModelEmpleado(String nombresEmpleado, String apellidosEmpleado, String DUI, int ISSS, String telefono, String email, Date fechaNac, Date fechaContratacion, float salario, int idCargo, int idDireccion) {
+    public ViewModelEmpleado(int idEmpleado, String nombresEmpleado, String apellidosEmpleado, String DUI, int ISSS, String telefono, String email, Date fechaNac, Date fechaContratacion, float salario, int idCargo, String cargo, int idDireccion, String direccionCompleta) {
+        this.idEmpleado = idEmpleado;
         this.nombresEmpleado = nombresEmpleado;
         this.apellidosEmpleado = apellidosEmpleado;
         this.DUI = DUI;
@@ -39,7 +42,9 @@ public class ViewModelEmpleado {
         this.fechaContratacion = fechaContratacion;
         this.salario = salario;
         this.idCargo = idCargo;
+        this.cargo = cargo;
         this.idDireccion = idDireccion;
+        this.direccionCompleta = direccionCompleta;
     }
 
     public int getIdEmpleado() {
@@ -130,6 +135,14 @@ public class ViewModelEmpleado {
         this.idCargo = idCargo;
     }
 
+    public String getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
+    
     public int getIdDireccion() {
         return idDireccion;
     }
@@ -137,6 +150,12 @@ public class ViewModelEmpleado {
     public void setIdDireccion(int idDireccion) {
         this.idDireccion = idDireccion;
     }
- 
 
+    public String getDireccionCompleta() {
+        return direccionCompleta;
+    }
+
+    public void setDireccionCompleta(String direccionCompleta) {
+        this.direccionCompleta = direccionCompleta;
+    }
 }

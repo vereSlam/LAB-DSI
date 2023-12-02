@@ -25,8 +25,8 @@
         <table border="1" class="tabla">
             <thead>
                 <tr>
-                    <th>idUnidadPrecio</th>
-                    <th>unidadPrecio</th>
+                    <th>IdUnidadPrecio</th>
+                    <th>UnidadPrecio</th>
                     <th>Acciones</th>
                 </tr>
             </thead>

@@ -25,7 +25,7 @@
         <table border="1" class="tabla">
             <thead>
                 <tr>
-                    <th>idMetodoPago</th>
+                    <th>IdMetodoPago</th>
                     <th>NombreMetodoPago</th>
                     <th>Acciones</th>
                 </tr>

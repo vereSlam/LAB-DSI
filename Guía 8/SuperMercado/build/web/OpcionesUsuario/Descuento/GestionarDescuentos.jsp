@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Gestionar Descuentos</title>
     </head>
-    <body>
+    <body id="gestionar">
        <h1>Gestión de Descuentos</h1>
         <h2>Listado de Descuentos</h2>
         <h2>Conexion: ${mensaje_conexion}</h2>
@@ -25,11 +25,11 @@
         <table border="1" class="tabla">
             <thead>
                 <tr>
-                    <th>idDescuento</th>
+                    <th>IdDescuento</th>
                     <th>NombreDescuento</th>
-                    <th>fechaInicio</th>
-                    <th>fechaFin</th>
-                    <th>porcentajeDescuento</th>
+                    <th>FechaInicio</th>
+                    <th>FechaFin</th>
+                    <th>PorcentajeDescuento</th>
                     <th>Acciones</th>
                 </tr>
             </thead>

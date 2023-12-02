@@ -25,8 +25,8 @@
         <table border="1" class="tabla">
             <thead>
                 <tr>
-                    <th>idSubCategoria</th>
-                    <th>idCategoria</th>
+                    <th>IdSubCategoria</th>
+                    <th>Categoria</th>
                     <th>subCategoria</th>
                     <th>Acciones</th>
                 </tr>
@@ -35,7 +35,8 @@
                 <c:forEach items="${listaSubCategorias}" var="item">
                     <tr>
                         <td><c:out value="${item.idSubCategoria}" /></td>
-                        <td><c:out value="${item.idCategoria}" /></td>
+                        <!--<td><c:out value="${item.idCategoria}" /></td> -->
+                        <td><c:out value="${item.categoria}" /></td>
                         <td><c:out value="${item.subCategoria}" /></td>
                         
                          <!-- AÑADIR OPCIONES DE MODIFICACION Y ELIMINACION -->
@@ -48,7 +49,7 @@
                             </form>    
                             <form method="POST" action="/SuperMercado/OpcionesUsuario/SubCategoria/EliminarSubCategoria.jsp">
                                <input type="hidden" name="idSubCategoria" value="${item. idSubCategoria}" /> 
-                                <input type="hidden" name="idCategoria" value="${item.idCategoria}" />
+                                <input type="hidden" name="categoria" value="${item.categoria}" />
                                 <input type="hidden" name="subCategoria" value="${item.subCategoria}" />
                                 <input type="submit" class="bt" value="Eliminar" />
                             </form>

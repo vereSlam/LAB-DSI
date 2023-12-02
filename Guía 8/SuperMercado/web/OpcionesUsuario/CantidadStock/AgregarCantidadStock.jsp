@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Agregar CantidadStock</title>
     </head>
-    <body>
+    <body class="agg">
         <c:if test="${exito!=null}">
             <c:if test="${exito}">
                 <p><strong style="color: darkgreen;">La información se guardó correctamente</strong></p>
@@ -32,10 +32,10 @@
                 <input type="text" name="cantidad" id="cantidad" required /><br>
                 <label>Fecha de entrada:</label>
                 <input type="date" name="fechaEntrada" id="fechaEntrada" required /><br>                          
-                <input type="submit" value="Registrar" onclick="return confirm('¿Desea registrar una cantidad en Stock?')" /><br><br>
+                <input type="submit" class="botn" value="Registrar" onclick="return confirm('¿Desea registrar una cantidad en Stock?')" /><br><br>
             </div><br>
             <div>
-                <a href="/SuperMercado/?accion=GestionarCantidadStock">Regresar</a>
+                <a class="botn" href="/SuperMercado/?accion=GestionarCantidadStock">Regresar</a>
             </div>            
         </form>
     </body>

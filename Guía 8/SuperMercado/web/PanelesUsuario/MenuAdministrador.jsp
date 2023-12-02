@@ -34,6 +34,7 @@
                 <li><a href="/SuperMercado?accion=GestionarSubCategorias">Gestion de SubCategorias</a></li>
                 <li><a href="/SuperMercado?accion=GestionarUnidadPrecio">Gestion de Precio de Unidades</a></li>
                 <li><a href="/SuperMercado?accion=GestionarVentas">Gestion de Ventas</a></li>
+                <li><a href="/SuperMercado?accion=GestionarUsuarios">Gestion de Usuarios</a></li>
                 <!--<li><a href="/SuperMercado?accion="></a></li>-->
             </ul>
         </nav>

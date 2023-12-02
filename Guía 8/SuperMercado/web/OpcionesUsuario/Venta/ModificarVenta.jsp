@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Modificar Venta</title>
     </head>
-    <body>
+    <body class="agg">
          <h1>Modificar venta</h1>
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=ModificarVenta">
             <div>
@@ -26,10 +26,10 @@
                 <input type="date" name="fechaVenta" id="fechaVenta" value="${param.fechaVenta}" required /><br>
                 <label>Hora de venta:</label>
                 <input type="text" name="horaVenta" id="horaVenta" value="${param.horaVenta}" required /><br><br>           
-                <input type="submit" value="Modificar" onclick="return confirm('¿Desea modificar la venta?')" /><br><br> 
+                <input type="submit" class="botn" value="Modificar" onclick="return confirm('¿Desea modificar la venta?')" /><br><br> 
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarVentas">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarVentas">Regresar</a><br><br>
             </div>             
         </form>
     </body>

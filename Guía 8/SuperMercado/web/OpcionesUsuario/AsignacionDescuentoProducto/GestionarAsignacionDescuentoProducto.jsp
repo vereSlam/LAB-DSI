@@ -25,9 +25,9 @@
         <table border="1" class="tabla">
             <thead>
                 <tr>
-                    <th>idAsignacionDescuentoProducto</th>
-                    <th>idProducto</th>
-                    <th>idDescuento</th>
+                    <th>IdAsignacionDescuentoProducto</th>
+                    <th>NombreProducto</th>
+                    <th>NombreDescuento</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -35,8 +35,10 @@
                 <c:forEach items="${listaAsignacionDescuentoProducto}" var="item">
                     <tr>
                         <td><c:out value="${item.idAsignacionDescuentoProducto}" /></td>
-                        <td><c:out value="${item.idProducto}" /></td>
-                        <td><c:out value="${item.idDescuento}" /></td>
+                        <!-- <td><c:out value="${item.idProducto}" /></td> -->
+                        <td><c:out value="${item.nombreProducto}" /></td>
+                        <!-- <td><c:out value="${item.idDescuento}" /></td> -->
+                        <td><c:out value="${item.nombreDescuento}" /></td>
                         
                          <!-- AÑADIR OPCIONES DE MODIFICACION Y ELIMINACION -->
                         <td>
@@ -48,8 +50,8 @@
                             </form>    
                             <form method="POST" action="/SuperMercado/OpcionesUsuario/AsignacionDescuentoProducto/EliminarAsignacionDescuentoProducto.jsp">
                                 <input type="hidden" name="idAsignacionDescuentoProducto" value="${item.idAsignacionDescuentoProducto}" /> 
-                                <input type="hidden" name="idProducto" value="${item.idProducto}" />
-                                <input type="hidden" name="idDescuento" value="${item.idDescuento}" />
+                                <input type="hidden" name="idProducto" value="${item.nombreProducto}" />
+                                <input type="hidden" name="idDescuento" value="${item.nombreDescuento}" />
                                 <input type="submit" class="bt" value="Eliminar" />
                             </form>
                         </td>

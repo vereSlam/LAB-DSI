@@ -25,11 +25,11 @@
         <table border="1" class="tabla">
             <thead>
                 <tr>
-                    <th>idVenta</th>
-                    <th>idEmpleado</th>
-                    <th>idCliente</th>
-                    <th>fechaVenta</th>
-                    <th>horaVenta</th>
+                    <th>IdVenta</th>
+                    <th>NombreEmpleado</th>
+                    <th>NombreCliente</th>
+                    <th>FechaVenta</th>
+                    <th>HoraVenta</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -37,8 +37,10 @@
                 <c:forEach items="${listaVentas}" var="item">
                     <tr>
                         <td><c:out value="${item.idVenta}" /></td>
-                        <td><c:out value="${item.idEmpleado}" /></td>
-                        <td><c:out value="${item.idCliente}" /></td>
+                        <!--<td><c:out value="${item.idEmpleado}" /></td> -->
+                        <td><c:out value="${item.nombreEmpleado}" /></td>
+                        <!--<td><c:out value="${item.idCliente}" /></td> -->
+                        <td><c:out value="${item.nombreCliente}" /></td>
                         <td><c:out value="${item.fechaVenta}" /></td>
                         <td><c:out value="${item.horaVenta}" /></td> 
                         
@@ -53,9 +55,9 @@
                                 <input type="submit" class="bt" value="Modificar" />
                             </form>    
                             <form method="POST" action="/SuperMercado/OpcionesUsuario/Venta/EliminarVenta.jsp">
-                              <input type="hidden" name="idVenta" value="${item. idVenta}" /> 
-                                <input type="hidden" name="idEmpleado" value="${item.idEmpleado}" />
-                                <input type="hidden" name="idCliente" value="${item.idCliente}" />
+                                <input type="hidden" name="idVenta" value="${item. idVenta}" /> 
+                                <input type="hidden" name="nombreEmpleado" value="${item.nombreEmpleado}" />
+                                <input type="hidden" name="nombreCliente" value="${item.nombreCliente}" />
                                 <input type="hidden" name="fechaVenta" value="${item.fechaVenta}" />
                                 <input type="hidden" name="horaVenta" value="${item.horaVenta}" />
                                 <input type="submit" class="bt" value="Eliminar" />

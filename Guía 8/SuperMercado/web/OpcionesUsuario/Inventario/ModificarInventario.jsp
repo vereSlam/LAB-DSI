@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Modificar Inventario</title>
     </head>
-    <body>
+    <body class="agg">
          <h1>Modificar inventario</h1>
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=ModificarInventario">
             <div>
@@ -24,10 +24,10 @@
                 <input type="text" name="cantExist" id="cantExist" value="${param.cantExist}" required /><br>
                 <label>Fecha de actualizacion:</label>
                 <input type="date" name="fechaActualizacion" id="cantExist" value="${param.fechaActualizacion}" required /><br><br>           
-                <input type="submit" value="Modificar" onclick="return confirm('¿Desea modificar el inventario?')" /><br><br> 
+                <input type="submit" class="botn" value="Modificar" onclick="return confirm('¿Desea modificar el inventario?')" /><br><br> 
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarInventarios">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarInventarios">Regresar</a><br><br>
             </div>             
         </form>
     </body>

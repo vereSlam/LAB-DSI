@@ -12,23 +12,31 @@ import java.math.BigDecimal;
 public class ViewModelDetalleVenta {
     private int idDetallesVenta;
     private int idVenta;
+    private String nombreEmpleado;
+    private String nombreCliente;
     private int idProducto;
+    private String nombreProducto;
     private int cantidadVendida;
     private float subTotal;
     private BigDecimal montoTotal;
     private int idMetodoPago;
+    private String nombreMetodoPago;
 
     public ViewModelDetalleVenta() {
     }
 
-    public ViewModelDetalleVenta(int idDetallesVenta, int idVenta, int idProducto, int cantidadVendida, float subTotal, BigDecimal montoTotal, int idMetodoPago) {
+    public ViewModelDetalleVenta(int idDetallesVenta, int idVenta, String nombreEmpleado, String nombreCliente, int idProducto, String nombreProducto, int cantidadVendida, float subTotal, BigDecimal montoTotal, int idMetodoPago, String nombreMetodoPago) {
         this.idDetallesVenta = idDetallesVenta;
         this.idVenta = idVenta;
+        this.nombreEmpleado = nombreEmpleado;
+        this.nombreCliente = nombreCliente;
         this.idProducto = idProducto;
+        this.nombreProducto = nombreProducto;
         this.cantidadVendida = cantidadVendida;
         this.subTotal = subTotal;
         this.montoTotal = montoTotal;
         this.idMetodoPago = idMetodoPago;
+        this.nombreMetodoPago = nombreMetodoPago;
     }
 
     public int getIdDetallesVenta() {
@@ -47,12 +55,36 @@ public class ViewModelDetalleVenta {
         this.idVenta = idVenta;
     }
 
+    public String getNombreEmpleado() {
+        return nombreEmpleado;
+    }
+
+    public void setNombreEmpleado(String nombreEmpleado) {
+        this.nombreEmpleado = nombreEmpleado;
+    }
+
+    public String getNombreCliente() {
+        return nombreCliente;
+    }
+
+    public void setNombreCliente(String nombreCliente) {
+        this.nombreCliente = nombreCliente;
+    }
+
     public int getIdProducto() {
         return idProducto;
     }
 
     public void setIdProducto(int idProducto) {
         this.idProducto = idProducto;
+    }
+
+    public String getNombreProducto() {
+        return nombreProducto;
+    }
+
+    public void setNombreProducto(String nombreProducto) {
+        this.nombreProducto = nombreProducto;
     }
 
     public int getCantidadVendida() {
@@ -86,6 +118,12 @@ public class ViewModelDetalleVenta {
     public void setIdMetodoPago(int idMetodoPago) {
         this.idMetodoPago = idMetodoPago;
     }
-    
-    
+
+    public String getNombreMetodoPago() {
+        return nombreMetodoPago;
+    }
+
+    public void setNombreMetodoPago(String nombreMetodoPago) {
+        this.nombreMetodoPago = nombreMetodoPago;
+    }
 }

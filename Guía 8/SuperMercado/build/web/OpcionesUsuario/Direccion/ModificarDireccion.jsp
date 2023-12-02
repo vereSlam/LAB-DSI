@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Modificar Direccion</title>
     </head>
-    <body>
+    <body class="agg">
          <h1>Modificar direccion</h1>
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=ModificarDireccion">
             <div>
@@ -26,10 +26,10 @@
                 <input type="text" name="codigoPostal" id="codigoPostal" value="${param.codigoPostal}" required /><br>
                 <label>idDistrito:</label>
                 <input type="text" name="idDistrito" id="idDistrito" value="${param.idDistrito}" required /><br><br>           
-                <input type="submit" value="Modificar" onclick="return confirm('¿Desea modificar la direccion?')" /><br><br> 
+                <input type="submit" class="botn" value="Modificar" onclick="return confirm('¿Desea modificar la direccion?')" /><br><br> 
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarDirecciones">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarDirecciones">Regresar</a><br><br>
             </div>             
         </form>
     </body>

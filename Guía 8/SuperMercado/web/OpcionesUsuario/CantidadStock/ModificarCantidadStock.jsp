@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Modificar CantidadStock</title>
     </head>
-    <body>
+    <body class="agg">
         <h1>Modificar cantidad en Stock</h1>
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=ModificarCantidadStock">
             <div>
@@ -24,10 +24,10 @@
                 <input type="text" name="cantidad" id="cantidad" value="${param.cantidad}" required /><br>
                 <label>Fecha de entrada:</label>
                 <input type="date" name="fechaEntrada" id="fechaEntrada" value="${param.fechaEntrada}" required /><br><br>          
-                <input type="submit" value="Modificar" onclick="return confirm('¿Desea modificar la cantidad en Stock?')" /><br><br> 
+                <input type="submit" class="botn" value="Modificar" onclick="return confirm('¿Desea modificar la cantidad en Stock?')" /><br><br> 
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarCantidadStock">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarCantidadStock">Regresar</a><br><br>
             </div>             
         </form>
     </body>

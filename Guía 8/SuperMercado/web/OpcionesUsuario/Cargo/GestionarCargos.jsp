@@ -25,7 +25,7 @@
         <table border="1" class="tabla">
             <thead>
                 <tr>
-                    <th>idCargo</th>
+                    <th>IdCargo</th>
                     <th>Cargo</th>
                     <th>Acciones</th>
                 </tr>

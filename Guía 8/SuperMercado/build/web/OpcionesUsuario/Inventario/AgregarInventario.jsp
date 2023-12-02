@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Agregra Inventario</title>
     </head>
-    <body>
+    <body class="agg">
         <c:if test="${exito!=null}">
             <c:if test="${exito}">
                 <p><strong style="color: darkgreen;">La información se guardó correctamente</strong></p>
@@ -32,10 +32,10 @@
                 <input type="text" name="cantExist" id="cantExist" required /><br>
                 <label>Fecha de actualizacion:</label>
                 <input type="date" name="fechaActualizacion" id="cantExist" required /><br>                           
-                <input type="submit" value="Registrar" onclick="return confirm('¿Desea registrar el inventario?')" /><br><br>
+                <input type="submit" class="botn" value="Registrar" onclick="return confirm('¿Desea registrar el inventario?')" /><br><br>
             </div><br>
             <div>
-                <a href="/SuperMercado/?accion=GestionarInventarios">Regresar</a>
+                <a class="botn" href="/SuperMercado/?accion=GestionarInventarios">Regresar</a>
             </div>            
         </form>
     </body>

@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Modificar Asignacion Descuento</title>
     </head>
-    <body>
+    <body class="agg">
          <h1>Modificar empleado</h1>
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=ModificarAsignacionDescuentoProducto">
             <div>
@@ -22,10 +22,10 @@
                 <input type="text" name="idProducto" id="idProducto" value="${param.idProducto}" required /><br>
                 <label>idDescuento:</label>
                 <input type="text" name="idDescuento" id="idDescuento" value="${param.idDescuento}" required /><br><br>          
-                <input type="submit" value="Modificar" onclick="return confirm('¿Desea modificar la asignacion de descuento?')" /><br><br> 
+                <input type="submit" class="botn" value="Modificar" onclick="return confirm('¿Desea modificar la asignacion de descuento?')" /><br><br> 
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarAsignacionDescuentoProducto">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarAsignacionDescuentoProducto">Regresar</a><br><br>
             </div>             
         </form>
     </body>

@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Eliminar Proveedor</title>
     </head>
-    <body>
+    <body class="agg">
          <h1>Eliminar proveedor</h1>
 
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=EliminarProveedor">
@@ -21,12 +21,12 @@
                 <label>Nombre del proveedor: ${param.nombreProveedor}</label><br>
                 <label>Telefono: ${param.telefono}</label><br>
                 <label>Email: ${param.email}</label><br>
-                <label>ID Direccion: ${param.idDireccion}</label><br>  
+                <label>Direccion completa: ${param.direccionCompleta}</label><br>  
                 <input type="hidden" name="idProveedor" id="idProveedor" value="${param.idProveedor}" /><br><br>
-                <input type="submit" value="Eliminar" onclick="return confirm('¿Desea eliminar el proveedor?')" /><br><br>
+                <input type="submit" class="botn" value="Eliminar" onclick="return confirm('¿Desea eliminar el proveedor?')" /><br><br>
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarProveedores">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarProveedores">Regresar</a><br><br>
             </div>             
         </form>
     </body>

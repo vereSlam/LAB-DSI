@@ -11,15 +11,19 @@ package Models;
 public class ViewModelAsignacionDescuentoProducto {
     private int idAsignacionDescuentoProducto;
     private int idProducto;
+    private String nombreProducto;
     private int idDescuento;
+    private String nombreDescuento;
 
     public ViewModelAsignacionDescuentoProducto() {
     }
 
-    public ViewModelAsignacionDescuentoProducto(int idAsignacionDescuentoProducto, int idProducto, int idDescuento) {
+    public ViewModelAsignacionDescuentoProducto(int idAsignacionDescuentoProducto, int idProducto, String nombreProducto, int idDescuento, String nombreDescuento) {
         this.idAsignacionDescuentoProducto = idAsignacionDescuentoProducto;
         this.idProducto = idProducto;
+        this.nombreProducto = nombreProducto;
         this.idDescuento = idDescuento;
+        this.nombreDescuento = nombreDescuento;
     }
 
     public int getIdAsignacionDescuentoProducto() {
@@ -38,11 +42,27 @@ public class ViewModelAsignacionDescuentoProducto {
         this.idProducto = idProducto;
     }
 
+    public String getNombreProducto() {
+        return nombreProducto;
+    }
+
+    public void setNombreProducto(String nombreProducto) {
+        this.nombreProducto = nombreProducto;
+    }
+
     public int getIdDescuento() {
         return idDescuento;
     }
 
     public void setIdDescuento(int idDescuento) {
         this.idDescuento = idDescuento;
+    }
+
+    public String getNombreDescuento() {
+        return nombreDescuento;
+    }
+
+    public void setNombreDescuento(String nombreDescuento) {
+        this.nombreDescuento = nombreDescuento;
     }
 }

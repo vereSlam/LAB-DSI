@@ -11,15 +11,17 @@ import java.util.Date;
 public class ViewModelCantidadStock {
     private int idCantidadStock;
     private int idCompra;
+    private float montoTotal;
     private int cantidad;
     private Date fechaEntrada;
 
     public ViewModelCantidadStock() {
     }
 
-    public ViewModelCantidadStock(int idCantidadStock, int idCompra, int cantidad, Date fechaEntrada) {
+    public ViewModelCantidadStock(int idCantidadStock, int idCompra, float montoTotal, int cantidad, Date fechaEntrada) {
         this.idCantidadStock = idCantidadStock;
         this.idCompra = idCompra;
+        this.montoTotal = montoTotal;
         this.cantidad = cantidad;
         this.fechaEntrada = fechaEntrada;
     }
@@ -38,6 +40,14 @@ public class ViewModelCantidadStock {
 
     public void setIdCompra(int idCompra) {
         this.idCompra = idCompra;
+    }
+
+    public float getMontoTotal() {
+        return montoTotal;
+    }
+
+    public void setMontoTotal(float montoTotal) {
+        this.montoTotal = montoTotal;
     }
 
     public int getCantidad() {

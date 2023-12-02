@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Eliminar Empleado</title>
     </head>
-    <body>
+    <body class="agg">
           <h1>Eliminar empleado</h1>
 
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=EliminarEmpleado">
@@ -27,13 +27,13 @@
                 <label>Email: ${param.email}</label><br>
                 <label>Fecha de contratacion: ${param.fechaContratacion}</label><br>
                 <label>Salario: ${param.salario}</label><br>
-                <label>ID Cargo: ${param.idCargo}</label><br>
-                <label>ID Dirección: ${param.idDireccion}</label>   
+                <label>Cargo: ${param.cargo}</label><br>
+                <label>Dirección completa: ${param.direccionCompleta}</label>   
                 <input type="hidden" name="idEmpleado" id="idEmpleado" value="${param.idEmpleado}" /><br><br>
-                <input type="submit" value="Eliminar" onclick="return confirm('¿Desea eliminar el empleado?')" /><br><br>
+                <input type="submit" class="botn" value="Eliminar" onclick="return confirm('¿Desea eliminar el empleado?')" /><br><br>
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarEmpleados">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarEmpleados">Regresar</a><br><br>
             </div>             
         </form>
     </body>

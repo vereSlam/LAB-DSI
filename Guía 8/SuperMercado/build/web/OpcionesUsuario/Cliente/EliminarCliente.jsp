@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Eliminar Cliente</title>
     </head>
-    <body>
+    <body class="agg">
         <h1>Eliminar cliente</h1>
 
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=EliminarCliente">
@@ -23,12 +23,12 @@
                 <label>Telefono: ${param.telefono}</label><br>
                 <label>Email: ${param.email}</label><br>
                 <label>DUI: ${param.DUI}</label><br>
-                <label>ID Dirección: ${param.idDireccion}</label>   
+                <label>Direccion completa: ${param.direccionCompleta}</label>   
                 <input type="hidden" name="idCliente" id="idCliente" value="${param.idCliente}" /><br><br>
-                <input type="submit" value="Eliminar" onclick="return confirm('¿Desea eliminar el cliente?')" /><br><br>
+                <input type="submit" class="botn" value="Eliminar" onclick="return confirm('¿Desea eliminar el cliente?')" /><br><br>
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarClientes">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarClientes">Regresar</a><br><br>
             </div>             
         </form>
     </body>

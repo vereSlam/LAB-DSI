@@ -124,7 +124,7 @@ table {
     padding: 10px;
     background-color: #FFE4E1;
 }
-#gestionar div{
+#gestionar > div{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -141,3 +141,48 @@ table {
 #gestionar a:hover {color: white; background-color: #CD5C5C; cursor: pointer}
 .bt:hover {color: white; background-color: #CD5C5C; cursor: pointer}
 
+ /* Estilo para el contenedor del pop-up */
+ .popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    z-index: 1;
+    text-align: left;
+ }
+/* Estilo para el fondo oscuro */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+/* OTROS */
+.agg{
+    border: 1px solid #8B0000;
+    border-radius: 25px;
+    margin: 5% 30%;
+    padding: 2%;
+}
+.modd{
+    border: 1px solid #8B0000;
+    border-radius: 25px;
+    margin: 5% 30%;
+    padding: 2%;
+}
+.botn{
+    border: 1px solid #164;
+    font-size: 15px;
+    height: 20px;
+    width: 80px;
+    background-color: #FFE4E1;
+}
+.botn:hover {color: white; background-color: #CD5C5C; cursor: pointer}

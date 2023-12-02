@@ -12,19 +12,19 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Eliminar SubCategoria</title>
     </head>
-    <body>
+    <body class="agg">
         <h1>Eliminar SubCategoria</h1>
 
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=EliminarSubCategoria">
             <div>
                 <label>ID SubCategoria: ${param.idSubCategoria}</label><br>
-                <label>ID Categoria: ${param.idCategoria}</label><br>
+                <label>Categoria: ${param.categoria}</label><br>
                 <label>SubCategoria: ${param.subCategoria}</label><br>  
                 <input type="hidden" name="idSubCategoria" id="idSuCategoria" value="${param.idSubCategoria}" /><br><br>
-                <input type="submit" value="Eliminar" onclick="return confirm('¿Desea eliminar la SubCategoria?')" /><br><br>
+                <input type="submit" class="botn" value="Eliminar" onclick="return confirm('¿Desea eliminar la SubCategoria?')" /><br><br>
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarSubCategorias">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarSubCategorias">Regresar</a><br><br>
             </div>             
         </form>
     </body>

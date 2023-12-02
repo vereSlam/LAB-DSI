@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Agregar DetalleVenta</title>
     </head>
-    <body>
+    <body class="agg">
         <c:if test="${exito!=null}">
             <c:if test="${exito}">
                 <p><strong style="color: darkgreen;">La información se guardó correctamente</strong></p>
@@ -38,10 +38,10 @@
                 <input type="text" name="montoTotal" id="montoTotal" required /><br>
                 <label>ID Metodo de pago:</label>                          
                 <input type="text" name="idMetodoPago" id="idMetodoPago" required /><br>
-                <input type="submit" value="Registrar" onclick="return confirm('¿Desea registrar los detalle de venta?')" /><br><br>
+                <input type="submit" class="botn" value="Registrar" onclick="return confirm('¿Desea registrar los detalle de venta?')" /><br><br>
             </div><br>
             <div>
-                <a href="/SuperMercado/?accion=GestionarDetallesVentas">Regresar</a>
+                <a class="botn" href="/SuperMercado/?accion=GestionarDetallesVentas">Regresar</a>
             </div>            
         </form>
     </body>

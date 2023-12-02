@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Eliminar MetodoPago</title>
     </head>
-    <body>
+    <body class="agg">
          <h1>Eliminar metodos de pago</h1>
 
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=EliminarMetodoPago">
@@ -20,10 +20,10 @@
                 <label>ID Metodo de pago: ${param.idMetodoPago}</label><br>
                 <label>Nombre del metodo de pago: ${param.nombreMetodoPago}</label><br>  
                 <input type="hidden" name="idMetodoPago" id="idMetodoPago" value="${param.idMetodoPago}" /><br><br>
-                <input type="submit" value="Eliminar" onclick="return confirm('¿Desea eliminar el metodo de pago?')" /><br><br>
+                <input type="submit" class="botn" value="Eliminar" onclick="return confirm('¿Desea eliminar el metodo de pago?')" /><br><br>
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarMetodoPago">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarMetodoPago">Regresar</a><br><br>
             </div>             
         </form>
     </body>

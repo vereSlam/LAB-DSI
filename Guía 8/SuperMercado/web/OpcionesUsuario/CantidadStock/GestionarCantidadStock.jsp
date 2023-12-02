@@ -25,10 +25,10 @@
         <table border="1" class="tabla">
             <thead>
                 <tr>
-                    <th>idCantidadStock</th>
-                    <th>idCompra</th>
-                    <th>cantidad</th>
-                    <th>fechaEntrada</th>
+                    <th>IdCantidadStock</th>
+                    <th>MontoTotal</th>
+                    <th>Cantidad</th>
+                    <th>FechaEntrada</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -36,7 +36,8 @@
                 <c:forEach items="${listaCantidadStock}" var="item">
                     <tr>
                         <td><c:out value="${item.idCantidadStock}" /></td>
-                        <td><c:out value="${item.idCompra}" /></td>
+                        <!-- <td><c:out value="${item.idCompra}" /></td> -->
+                        <td><c:out value="${item.montoTotal}" /></td>
                         <td><c:out value="${item.cantidad}" /></td>
                         <td><c:out value="${item.fechaEntrada}" /></td>
                         
@@ -51,7 +52,7 @@
                             </form>    
                             <form method="POST" action="/SuperMercado/OpcionesUsuario/CantidadStock/EliminarCantidadStock.jsp">
                                 <input type="hidden" name="idCantidadStock" value="${item.idCantidadStock}" /> 
-                                <input type="hidden" name="idCompra" value="${item.idCompra}" />
+                                <input type="hidden" name="montoTotal" value="${item.montoTotal}" />
                                 <input type="hidden" name="cantidad" value="${item.cantidad}" />
                                 <input type="hidden" name="fechaEntrada" value="${item.fechaEntrada}" />
                                 <input type="submit" class="bt" value="Eliminar" />

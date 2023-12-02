@@ -12,21 +12,21 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Eliminar Venta</title>
     </head>
-    <body>
+    <body class="agg">
          <h1>Eliminar venta</h1>
 
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=EliminarVenta">
             <div>
                 <label>ID Venta: ${param.idVenta}</label><br>
-                <label>ID Empleado: ${param.idEmpleado}</label><br>
-                <label>ID Cliente: ${param.idCliente}</label><br>
+                <label>Nombre empleado: ${param.nombreEmpleado}</label><br>
+                <label>Nombre cliente: ${param.nombreCliente}</label><br>
                 <label>Fecha de venta: ${param.fechaVenta}</label><br>
                 <label>Hora de venta: ${param.horaVenta}</label><br>  
                 <input type="hidden" name="idVenta" id="idVenta" value="${param.idVenta}" /><br><br>
-                <input type="submit" value="Eliminar" onclick="return confirm('¿Desea eliminar la venta?')" /><br><br>
+                <input type="submit" class="botn" value="Eliminar" onclick="return confirm('¿Desea eliminar la venta?')" /><br><br>
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarVentas">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarVentas">Regresar</a><br><br>
             </div>             
         </form>
     </body>

@@ -11,19 +11,25 @@ import java.util.Date;
 public class ViewModelCompra {
     private int idCompra;
     private int idProveedor;
+    private String nombreProveedor;
     private int idEmpleado;
+    private String nombresEmpleado;
     private int idProducto;
+    private String nombreProducto;
     private Date fechaCompra;
     private float montoTotal;
 
     public ViewModelCompra() {
     }
 
-    public ViewModelCompra(int idCompra, int idProveedor, int idEmpleado, int idProducto, Date fechaCompra, float montoTotal) {
+    public ViewModelCompra(int idCompra, int idProveedor, String nombreProveedor, int idEmpleado, String nombresEmpleado, int idProducto, String nombreProducto, Date fechaCompra, float montoTotal) {
         this.idCompra = idCompra;
         this.idProveedor = idProveedor;
+        this.nombreProveedor = nombreProveedor;
         this.idEmpleado = idEmpleado;
+        this.nombresEmpleado = nombresEmpleado;
         this.idProducto = idProducto;
+        this.nombreProducto = nombreProducto;
         this.fechaCompra = fechaCompra;
         this.montoTotal = montoTotal;
     }
@@ -44,6 +50,14 @@ public class ViewModelCompra {
         this.idProveedor = idProveedor;
     }
 
+    public String getNombreProveedor() {
+        return nombreProveedor;
+    }
+
+    public void setNombreProveedor(String nombreProveedor) {
+        this.nombreProveedor = nombreProveedor;
+    }
+
     public int getIdEmpleado() {
         return idEmpleado;
     }
@@ -52,12 +66,28 @@ public class ViewModelCompra {
         this.idEmpleado = idEmpleado;
     }
 
+    public String getNombresEmpleado() {
+        return nombresEmpleado;
+    }
+
+    public void setNombresEmpleado(String nombreEmpleado) {
+        this.nombresEmpleado = nombreEmpleado;
+    }
+
     public int getIdProducto() {
         return idProducto;
     }
 
     public void setIdProducto(int idProducto) {
         this.idProducto = idProducto;
+    }
+
+    public String getNombreProducto() {
+        return nombreProducto;
+    }
+
+    public void setNombreProducto(String nombreProducto) {
+        this.nombreProducto = nombreProducto;
     }
 
     public Date getFechaCompra() {

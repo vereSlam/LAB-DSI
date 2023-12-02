@@ -25,10 +25,10 @@
         <table border="1" class="tabla">
             <thead>
                 <tr>
-                    <th>idInventario</th>
-                    <th>idCantidadStock</th>
-                    <th>cantExist</th>
-                    <th>fechaActualizacion</th>
+                    <th>IdInventario</th>
+                    <th>CantExist</th>
+                    <th>FechaEntrada</th>
+                    <th>FechaActualizacion</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -36,8 +36,9 @@
                 <c:forEach items="${listaInventarios}" var="item">
                     <tr>
                         <td><c:out value="${item.idInventario}" /></td>
-                        <td><c:out value="${item.idCantidadStock}" /></td>
+                        <!--<td><c:out value="${item.idCantidadStock}" /></td> -->
                         <td><c:out value="${item.cantExist}" /></td>
+                        <td><c:out value="${item.fechaEntrada}" /></td>
                         <td><c:out value="${item.fechaActualizacion}" /></td>
                         
                          <!-- AÑADIR OPCIONES DE MODIFICACION Y ELIMINACION -->
@@ -50,9 +51,9 @@
                                 <input type="submit" class="bt" value="Modificar" />
                             </form>    
                             <form method="POST" action="/SuperMercado/OpcionesUsuario/Inventario/EliminarInventario.jsp">
-                                 <input type="hidden" name="idInventario" value="${item. idInventario}" /> 
-                                <input type="hidden" name="idCantidadStock" value="${item.idCantidadStock}" />
+                                <input type="hidden" name="idInventario" value="${item. idInventario}" /> 
                                 <input type="hidden" name="cantExist" value="${item.cantExist}" />
+                                <input type="hidden" name="fechaEntrada" value="${item.fechaEntrada}" />
                                 <input type="hidden" name="fechaActualizacion" value="${item.fechaActualizacion}" />
                                 <input type="submit" class="bt" value="Eliminar" />
                             </form>

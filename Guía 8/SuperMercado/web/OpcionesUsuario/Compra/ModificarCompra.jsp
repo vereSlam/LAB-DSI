@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <title>Modificar Compra</title>
     </head>
-    <body>
+    <body class="agg">
         <h1>Modificar compra</h1>
         <form method="POST" action="/SuperMercado/ServletPrincipal?accion=ModificarCompra">
             <div>
@@ -28,10 +28,10 @@
                 <input type="date" name="fechaCompra" id="fechaCompra" value="${param.fechaCompra}" required /><br>
                 <label>Monto total:</label>
                 <input type="text" name="montoTotal" id="montoTotal" value="${param.montoTotal}" required /><br><br>           
-                <input type="submit" value="Modificar" onclick="return confirm('¿Desea modificar la compra?')" /><br><br> 
+                <input type="submit" class="botn" value="Modificar" onclick="return confirm('¿Desea modificar la compra?')" /><br><br> 
             </div>
             <div>
-                <a href="/SuperMercado/?accion=GestionarCompras">Regresar</a><br><br>
+                <a class="botn" href="/SuperMercado/?accion=GestionarCompras">Regresar</a><br><br>
             </div>             
         </form>
     </body>

@@ -12,15 +12,17 @@ public class ViewModelInventario {
     private int idInventario;
     private int idCantidadStock;
     private int cantExist;
+    private Date fechaEntrada;
     private Date fechaActualizacion;
 
     public ViewModelInventario() {
     }
 
-    public ViewModelInventario(int idInventario, int idCantidadStock, int cantExist, Date fechaActualizacion) {
+    public ViewModelInventario(int idInventario, int idCantidadStock, int cantExist, Date fechaEntrada, Date fechaActualizacion) {
         this.idInventario = idInventario;
         this.idCantidadStock = idCantidadStock;
         this.cantExist = cantExist;
+        this.fechaEntrada = fechaEntrada;
         this.fechaActualizacion = fechaActualizacion;
     }
 
@@ -46,6 +48,14 @@ public class ViewModelInventario {
 
     public void setCantExist(int cantExist) {
         this.cantExist = cantExist;
+    }
+
+    public Date getFechaEntrada() {
+        return fechaEntrada;
+    }
+
+    public void setFechaEntrada(Date fechaEntrada) {
+        this.fechaEntrada = fechaEntrada;
     }
 
     public Date getFechaActualizacion() {

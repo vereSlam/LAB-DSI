@@ -25,11 +25,11 @@
         <table border="1" class="tabla">
             <thead>
                 <tr>
-                    <th>idProveedor</th>
+                    <th>IdProveedor</th>
                     <th>NombreProveedor</th>
                     <th>Telefono</th>
                     <th>Email</th>
-                    <th>idDireccion</th>
+                    <th>DireccionCompleta</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -40,24 +40,25 @@
                         <td><c:out value="${item.nombreProveedor}" /></td>
                         <td><c:out value="${item.telefono}" /></td>
                         <td><c:out value="${item.email}" /></td> 
-                        <td><c:out value="${item.idDireccion}" /></td>
+                        <!--<td><c:out value="${item.idDireccion}" /></td> -->
+                        <td><c:out value="${item.direccionCompleta}" /></td>
                         
                          <!-- AÑADIR OPCIONES DE MODIFICACION Y ELIMINACION -->
                         <td>
                             <form method="POST" action="/SuperMercado/OpcionesUsuario/Proveedor/ModificarProveedor.jsp">
-                                <input type="hidden" name="idEmpleado" value="${item. idProveedor}" /> 
-                                <input type="hidden" name="nombresEmpleado" value="${item.nombreProveedor}" />
+                                <input type="hidden" name="idProveedor" value="${item. idProveedor}" /> 
+                                <input type="hidden" name="nombreProveedor" value="${item.nombreProveedor}" />
                                 <input type="hidden" name="telefono" value="${item.telefono}" />
                                 <input type="hidden" name="email" value="${item.email}" />
                                 <input type="hidden" name="idDireccion" value="${item.idDireccion}" />
                                 <input type="submit" class="bt" value="Modificar" />
                             </form>    
                             <form method="POST" action="/SuperMercado/OpcionesUsuario/Proveedor/EliminarProveedor.jsp">
-                                <input type="hidden" name="idEmpleado" value="${item. idProveedor}" /> 
-                                <input type="hidden" name="nombresEmpleado" value="${item.nombreProveedor}" />
+                                <input type="hidden" name="idProveedor" value="${item. idProveedor}" /> 
+                                <input type="hidden" name="nombreProveedor" value="${item.nombreProveedor}" />
                                 <input type="hidden" name="telefono" value="${item.telefono}" />
                                 <input type="hidden" name="email" value="${item.email}" />
-                                <input type="hidden" name="idDireccion" value="${item.idDireccion}" />
+                                <input type="hidden" name="direccionCompleta" value="${item.direccionCompleta}" />
                                 <input type="submit" class="bt" value="Eliminar" />
                             </form>
                         </td>
